@@ -1,0 +1,18 @@
+apply plugin: "java"
+apply plugin: "idea"
+
+group = "de.vodev.mailcollectservice"
+version = "0.1"
+
+repositories {
+    // Standard Maven
+    mavenCentral()
+}
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-email
+    compile group: 'org.apache.commons', name: 'commons-email', version: '1.5'
+
+    testCompile "junit:junit:4.8.2"
+}
